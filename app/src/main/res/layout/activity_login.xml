@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/imageContainer"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_account"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_welcome_to_expense_manager"
+            android:textColor="@color/light_white"
+            android:textSize="12dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/login_illustrate"
+            android:contentDescription="@string/sign_in" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="2.5dp"
+            android:gravity="center"
+            android:text="@string/manage_your_expenses"
+            android:textColor="@color/light_white"
+            android:textSize="15dp"
+            tools:ignore="SpUsage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/flawlessly_amp_intimately"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_below="@id/imageContainer"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sign_in_button1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cornerRadius="50dp"
+                android:textSize="15dp"
+                android:elevation="10dp"
+                android:textColor="@color/white"
+                app:rippleColor="@color/dark_blue"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:text="@string/sign_in_with_google"
+                app:icon="@drawable/google24"
+                app:iconPadding="10dp"
+                app:iconTint="#00100D0D"
+                app:iconTintMode="src_atop"
+                tools:ignore="SpUsage" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_get_started"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="15dp"
+                app:icon="@drawable/guest24"
+                app:iconPadding="10dp"
+                app:iconTint="@color/light_white"
+                app:iconTintMode="src_atop"
+                app:backgroundTint="@color/light_blue"
+                android:textAllCaps="false"
+                android:text="@string/continue_as_guest"
+                android:contentDescription="@string/continue_as_guest"
+                android:background="@drawable/ripple_button"
+                android:textColor="@color/white"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
