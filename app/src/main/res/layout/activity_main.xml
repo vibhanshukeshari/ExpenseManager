@@ -1,94 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/rlMain"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
     tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/appBar_layout">
+
+                <include
+                    layout="@layout/app_bar"
+                    android:clickable="false"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#39434d"
+                    android:layout_above="@id/bottom_navigation"
+                    android:orientation="horizontal"
+                    android:paddingTop="0.2dp" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/selector"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/appBar_layout"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
 
 
 
 
+            </LinearLayout>
 
 
 
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/bottom_relative_layout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_below="@+id/selector">-->
+
+
+<!--                <androidx.viewpager.widget.ViewPager-->
+<!--                    android:id="@+id/view_pager"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:elevation="5dp" />-->
+
+<!--            </RelativeLayout>-->
 
 
 
+<!--                <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                    android:id="@+id/bottom_navigation"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@color/light_blue"-->
+<!--                    app:itemIconTint="@color/blue_white"-->
+<!--                    app:itemRippleColor="@color/highlight_blue"-->
+<!--                    app:itemTextColor="@color/light_blue"-->
+<!--                    app:labelVisibilityMode="selected"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    app:menu="@menu/menu_bottom" />-->
 
 
 
+        </RelativeLayout>
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:id="@+id/bottom_navigation"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottomAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:fabCradleMargin="6dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:backgroundTint="@color/light_blue"
+                app:fabCradleRoundedCornerRadius="10dp"
+                app:fabCradleVerticalOffset="6dp">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomNavigationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextAppearanceActive="@style/BottomNavigationTextStyle"
+                    app:itemTextAppearanceInactive="@style/BottomNavigationTextStyle"
+                    android:background="@android:color/transparent"
+                    app:itemIconTint="@color/bottom_nav_icon_color"
+                    app:elevation="0dp"
+                    android:layout_gravity="center"
+                    app:itemHorizontalTranslationEnabled="false"
+                    app:itemRippleColor="@color/dark_blue"
+                    app:itemTextColor="@color/bottom_nav_text_color"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/menu_bottom" />
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/highlight_blue"
+                android:src="@drawable/add_24"
+                 app:tint="@color/white"
+                app:rippleColor="@color/dark_blue"
+                app:layout_anchor="@id/bottomAppBar"
+                app:maxImageSize="30dp"
+                app:fabSize="mini"
+                android:contentDescription="@string/fab" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/dark_blue"
+            app:itemTextColor="@color/white"
+            app:subheaderColor="@color/light_white"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/navigation_menu">
 
 
+        </com.google.android.material.navigation.NavigationView>
 
+    </androidx.drawerlayout.widget.DrawerLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--    <?xml version="1.0" encoding="utf-8"?>-->
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--xmlns:tools="http://schemas.android.com/tools"-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--android:background="@color/dark_blue"-->
-<!--tools:context=".MainActivity">-->
-
-<!--<androidx.viewpager.widget.ViewPager-->
-<!--    android:id="@+id/pagerIntroSlider"-->
-<!--    android:layout_width="0dp"-->
-<!--    android:layout_height="0dp"-->
-<!--    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--    app:layout_constraintEnd_toEndOf="parent"-->
-<!--    app:layout_constraintHorizontal_bias="0.0"-->
-<!--    app:layout_constraintStart_toStartOf="parent"-->
-<!--    app:layout_constraintTop_toTopOf="parent"-->
-<!--    app:layout_constraintVertical_bias="1.0"-->
-<!--    />-->
-
-<!--<com.google.android.material.tabs.TabLayout-->
-<!--    android:id="@+id/tabs"-->
-<!--    android:background="@color/blue_darkest"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_marginBottom="8dp"-->
-<!--    app:layout_constraintBottom_toTopOf="@+id/button"-->
-<!--    app:layout_constraintEnd_toEndOf="parent"-->
-<!--    app:layout_constraintStart_toStartOf="parent"-->
-<!--    app:tabBackground="@drawable/slider_dot_selector"-->
-<!--    app:tabGravity="center"-->
-<!--    app:tabIndicatorHeight="0dp"-->
-<!--    />-->
-
-<!--<Button-->
-<!--    android:id="@+id/button"-->
-<!--    android:layout_width="wrap_content"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:text=">"-->
-<!--    android:background="@drawable/round_button"-->
-<!--    android:textColor="@color/white"-->
-<!--    app:layout_constraintBottom_toBottomOf="parent" />-->
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+</RelativeLayout>

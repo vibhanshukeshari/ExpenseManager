@@ -22,6 +22,23 @@
     <string name="manage_your_expenses">Manage Your Expenses</string>
     <string name="flawlessly_amp_intimately"><![CDATA[flawlessly & intimately]]></string>
     <string name="sign_in_with_google">Sign in with Google</string>
-    <string name="log_in_with_google">Log in With Google</string>
-    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="continue_as_guest">Skip for now</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="guest">Guest User</string>
+    <string name="fab">FAB</string>
+    <string name="stats">statistics</string>
+    <string name="account">Accounts</string>
+    <string name="budget">Budgets</string>
+    <string name="home">Home</string>
+    <string name="cancel">Cancle</string>
+    <string name="save">Save</string>
+    <string name="add_transaction">Add transaction</string>
+    <string name="expense">Expense</string>
+    <string name="transfer">Transfer</string>
+    <string name="income">Income</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="amount">Amount</string>
+    <string name="calculator">Calculator</string>
 </resources>

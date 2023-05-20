@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".Transaction">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/action_bar"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/light_blue"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_img_cancel_add_trans"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/cross_24"
+            android:padding="10dp"
+            android:contentDescription="@string/cancel"
+            tools:ignore="KeyboardInaccessibleWidget" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:text="@string/add_transaction" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:textColor="@color/highlight_blue"
+            android:text="@string/save"
+            tools:ignore="KeyboardInaccessibleWidget" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/action_bar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transaction_type"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/ten_percent_white"/>
+
+        <com.addisonelliott.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/buttonGroup_lordOfTheRings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            app:borderColor="@color/gray_white"
+            app:borderWidth="0.5dp"
+            app:divider="@color/gray_white"
+            app:dividerPadding="10dp"
+            app:dividerWidth="0.5dp"
+            app:position="0"
+            app:radius="16dp"
+            app:ripple="false"
+            android:background="@color/dark_blue"
+            app:selectedBackground="@color/highlight_blue">
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:drawable="@drawable/expense_24"
+                app:drawableGravity="left"
+                app:drawablePadding="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                app:selectedDrawableTint="@color/white"
+                android:contentDescription="@string/expense"
+                app:selectedTextColor="@color/white"
+                app:text="@string/expense"
+                app:textColor="@color/gray_white"
+                app:textSize="14dp"
+                tools:ignore="SpUsage" />
+
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:drawable="@drawable/income_24"
+                app:drawableGravity="left"
+                app:drawablePadding="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                app:selectedDrawableTint="@color/white"
+                android:contentDescription="@string/income"
+                app:selectedTextColor="@color/white"
+                app:text="@string/income"
+                app:textColor="@color/gray_white"
+                app:textSize="14dp"
+                tools:ignore="SpUsage" />
+
+            <com.addisonelliott.segmentedbutton.SegmentedButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:drawable="@drawable/transfer_24"
+                android:contentDescription="@string/transfer"
+                app:drawableGravity="left"
+                app:drawablePadding="5dp"
+                app:selectedDrawableTint="@color/white"
+                app:selectedTextColor="@color/white"
+                app:text="@string/transfer"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                app:textColor="@color/gray_white"
+                app:textSize="14dp"
+                tools:ignore="SpUsage" />
+
+
+        </com.addisonelliott.segmentedbutton.SegmentedButtonGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/ten_percent_white"/>
+
+
+        <LinearLayout
+            android:id="@+id/edit_text_layout_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_layout_dark_background">
+
+            <TextView
+                android:id="@+id/text_view_prefix_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/highlight_blue"
+                android:layout_marginEnd="3dp"
+                android:textSize="18dp"
+                tools:ignore="SpUsage" />
+
+            <EditText
+                android:id="@+id/edit_text_transaction"
+                android:layout_width="0dp"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/gray_white"
+                android:importantForAutofill="no"
+                tools:ignore="SpUsage"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/image_view_calculator_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/calculator_24"
+                android:contentDescription="@string/calculator" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

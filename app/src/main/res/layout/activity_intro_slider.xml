@@ -43,6 +43,7 @@
             style="@style/Widget.MaterialComponents.Button.Icon"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            app:backgroundTint="@color/highlight_blue"
             android:layout_alignParentStart="true"
             android:layout_margin="20dp"
             android:visibility="gone"
@@ -53,6 +54,7 @@
             android:insetRight="0dp"
             android:insetBottom="0dp"
             app:icon="@drawable/previous"
+            app:iconTint="@color/white"
             app:iconPadding="0dp"
             app:iconSize="24dp"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded" />
@@ -64,10 +66,12 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_get_started"
+                app:backgroundTint="@color/highlight_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20sp"
                 android:visibility="gone"
+                app:iconTint="@color/white"
                 android:textSize="15dp"
                 android:text="@string/get_started"
                 android:contentDescription="@string/get_started"
@@ -83,10 +87,13 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_alignParentEnd="true"
-            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             android:contentDescription="@string/next"
             android:gravity="end"
-            app:rippleColor="@color/dark_blue"
+            app:iconTint="@color/white"
             android:insetLeft="0dp"
             android:insetTop="0dp"
             android:insetRight="0dp"
@@ -94,6 +101,8 @@
             app:icon="@drawable/next"
             app:iconPadding="0dp"
             app:iconSize="24dp"
+            app:backgroundTint="@color/highlight_blue"
+            app:rippleColor="@color/dark_blue"
             app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded" />
 
     </RelativeLayout>

@@ -11,9 +11,12 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class SplashActivity extends AppCompatActivity {
+
+    private Prefs prefs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
 
         // It is used to prevent app to intent multiple activity in the stack . It happens after user press home button and then open app again.
@@ -28,9 +31,19 @@ public class SplashActivity extends AppCompatActivity {
         changeStatusBarColor();
 
 
-        Intent intent=new Intent(SplashActivity.this,IntroSlider.class);
-        startActivity(intent);
-        finish();
+        prefs = new Prefs(getApplicationContext());
+
+
+        if(!prefs.isLoggedIn()){
+            Intent intent=new Intent(SplashActivity.this,IntroSlider.class);
+            startActivity(intent);
+            finish();
+
+        } else {
+            Intent intent=new Intent(SplashActivity.this,MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
 
 

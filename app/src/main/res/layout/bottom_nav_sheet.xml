@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@color/dark_blue"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--android:orientation="horizontal">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:gravity="bottom"-->
+<!--    android:layout_margin="15dp"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:orientation="horizontal">-->
+
+
+
+
+
+<!--        <Button-->
+<!--            android:elevation="5dp"-->
+<!--            android:id="@+id/button_clear"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:text="AC"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24dp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/button_para2"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:text="+/-"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="24sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_para1"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:background="@drawable/button"-->
+<!--            android:text="%"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_divide"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:background="@drawable/arithmatic_button"-->
+<!--            android:text="/"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="28sp"/>-->
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <Button-->
+<!--            android:id="@+id/button7"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="7"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button8"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="8"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button9"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="9"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_multi"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/arithmatic_button"-->
+<!--            android:text="×"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="28sp"/>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <Button-->
+<!--            android:id="@+id/button4"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="4"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button5"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="5"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button6"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="6"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/button_sub"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/arithmatic_button"-->
+<!--            android:text="-"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="28sp"/>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <Button-->
+<!--            android:id="@+id/button1"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="1"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button2"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="2"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button3"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="3"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_add"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/arithmatic_button"-->
+<!--            android:text="+"-->
+<!--            android:includeFontPadding="false"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="28sp"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:orientation="horizontal">-->
+
+
+
+<!--        <Button-->
+<!--            android:id="@+id/button0"-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/new_but"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:gravity="start|center_vertical"-->
+<!--            android:paddingStart="30dp"-->
+<!--            android:text="0"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button_dot"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:background="@drawable/circle_button"-->
+<!--            android:text="."-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/ten_percent_white"-->
+<!--            android:textSize="28sp"/>-->
+<!--        <View-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/button_equal"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:background="@drawable/button_equal"-->
+<!--            android:text="="-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="28sp"/>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--</LinearLayout>-->
+
+<!--</RelativeLayout>-->
+
+<!--    &lt;!&ndash;// this is push effect to be set &ndash;&gt;-->
+<!--    &lt;!&ndash;    myButton.setOnTouchListener(new View.OnTouchListener() {&ndash;&gt;-->
+<!--    &lt;!&ndash;    @Override&ndash;&gt;-->
+<!--    &lt;!&ndash;    public boolean onTouch(View v, MotionEvent event) {&ndash;&gt;-->
+<!--    &lt;!&ndash;    if (event.getAction() == MotionEvent.ACTION_DOWN) {&ndash;&gt;-->
+<!--    &lt;!&ndash;    // Animate the button down&ndash;&gt;-->
+<!--    &lt;!&ndash;    v.animate().translationZ(8).setDuration(100).start();&ndash;&gt;-->
+<!--    &lt;!&ndash;    } else if (event.getAction() == MotionEvent.ACTION_UP) {&ndash;&gt;-->
+<!--    &lt;!&ndash;    // Animate the button up&ndash;&gt;-->
+<!--    &lt;!&ndash;    v.animate().translationZ(2).setDuration(100).start();&ndash;&gt;-->
+<!--    &lt;!&ndash;    }&ndash;&gt;-->
+<!--    &lt;!&ndash;    return false;&ndash;&gt;-->
+<!--    &lt;!&ndash;    }&ndash;&gt;-->
+<!--    &lt;!&ndash;    });&ndash;&gt;-->
+<!--    &lt;!&ndash;&ndash;&gt;-->

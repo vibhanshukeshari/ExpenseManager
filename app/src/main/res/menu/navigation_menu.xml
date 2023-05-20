@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:title="Setting :">
+        <menu>
+            <item
+                android:id="@+id/currency"
+                android:icon="@drawable/google24"
+                android:title="Currency" />
+
+
+        </menu>
+    </item>
+    <item android:title="Communicates :">
+        <menu>
+            <item
+                android:title="Share app"
+                android:icon="@drawable/google24"
+                android:iconTint="@color/highlight_blue"
+                android:id="@+id/share_app" />
+
+            <item
+                android:title="Rate us"
+                android:icon="@drawable/google24"
+                android:id="@+id/rate_us" />
+
+
+            <item
+                android:title="Feedback"
+                android:icon="@drawable/google24"
+                android:id="@+id/feedback" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="Legal documents :">
+        <menu>
+
+
+            <item
+                android:title="Privacy policy"
+                android:icon="@drawable/google24"
+                android:id="@+id/privacy" />
+
+
+            <item
+                android:title="Term of use"
+                android:icon="@drawable/google24"
+                android:id="@+id/term_and_condition" />
+        </menu>
+    </item>
+
+
+
+<!--    <item android:title="Did you know ?">-->
+<!--        <menu>-->
+<!--            <item-->
+
+<!--                android:enabled="false"-->
+<!--                app:actionLayout="@layout/footer_quote"-->
+<!--                android:icon="@drawable/bulb_quote_einstein"-->
+<!--                android:title="" />-->
+
+
+<!--        </menu>-->
+<!--    </item>-->
+</menu>

@@ -22,6 +22,7 @@ public class IntroSlider extends AppCompatActivity {
     private MaterialButton btnPrevious,btnNext;
     private MaterialButton btnGetStarted;
     private SliderPagerAdapter adapter;
+    private Prefs prefs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +32,11 @@ public class IntroSlider extends AppCompatActivity {
                 .setSystemUiVisibility(
                         View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         setContentView(R.layout.activity_intro_slider);
+
+
+        prefs = new Prefs(getApplicationContext());
         // hide action bar you can use NoAction theme as well
-        Objects.requireNonNull(getSupportActionBar()).hide();
+//        Objects.requireNonNull(getSupportActionBar()).hide();
         // bind views
         viewPager = findViewById(R.id.pagerIntroSlider);
         TabLayout tabLayout = findViewById(R.id.tabs);
@@ -67,10 +71,10 @@ public class IntroSlider extends AppCompatActivity {
 
 
                 // shared prefrences to be used vibhu(07/05/23)
-                Intent intent = new Intent(getApplicationContext(), Login.class);
-                startActivity(intent);
-                finish();
 
+                    Intent intent = new Intent(getApplicationContext(), Login.class);
+                    startActivity(intent);
+                    finish();
 
             }
         });
@@ -82,6 +86,7 @@ public class IntroSlider extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 viewPager.setCurrentItem(viewPager.getCurrentItem() + 1);
+
             }
         });
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

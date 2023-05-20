@@ -7,13 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="status_bar">#CC071D34</color>
 
 
 
     <color name="highlight_blue">#1da1f3</color>
-<!--    dark blue is modified as compared to easy loan and total paisa's blue-->
+<!--    dark blue and light blue is modified as compared to easy loan and total paisa's blue-->
     <color name="dark_blue">#0B121A</color>
-    <color name="light_blue">#15202b</color>
+    <color name="light_blue">#071D34</color>
+    <color name="lightest_blue">#151D28</color>
     <color name="light_white">#8899a6</color>
     <color name="blue_white">#daf0ff</color>
+    <color name="gray_white">#718EA0</color>
+    <color name="ten_percent_white">#E6FFFFFF</color>
+    <color name="blue_inactive">#4C6B87</color>
+
 </resources>
